@@ -9,7 +9,7 @@ import Layout from './Components/Layout/Layout';
 function App() {
   return (
     <>
-      <Route path="/home">
+      <Route path="/">
         <Layout name="home" />
       </Route>
       <Route path="/forms">
