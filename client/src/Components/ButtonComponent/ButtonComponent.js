@@ -10,7 +10,8 @@ export default function ButtonComponent() {
                   <div class="col-md-6">
                     <div class="card-body">
                       <h4 class="card-title">Single color buttons</h4>
-                      
+                      <p class="card-description">Add class .btn-color for buttons in theme colors</p>
+                      <p class="card-description">Example: .btn-danger</p>
                       <div class="template-demo">
                         <button type="button" class="btn btn-primary">Primary</button>
                         <button type="button" class="btn btn-secondary">Secondary</button>
@@ -50,7 +51,7 @@ export default function ButtonComponent() {
                   <div class="col-md-6">
                     <div class="card-body">
                       <h4 class="card-title">Outlined buttons</h4>
-                      
+                      <p class="card-description">Add class .btn-outline-color for outline buttons</p>
                       <div class="template-demo">
                         <button type="button" class="btn btn-outline-primary btn-fw">Primary</button>
                         <button type="button" class="btn btn-outline-secondary btn-fw">Secondary</button>
@@ -67,7 +68,7 @@ export default function ButtonComponent() {
                   <div class="col-md-6">
                     <div class="card-body">
                       <h4 class="card-title">Inverse buttons</h4>
-                      
+                      <p class="card-description">Add class .btn-inverse-color for inverse buttons</p>
                       <div class="template-demo">
                         <button type="button" class="btn btn-inverse-primary btn-fw">Primary</button>
                         <button type="button" class="btn btn-inverse-secondary btn-fw">Secondary</button>

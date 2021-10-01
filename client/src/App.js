@@ -9,9 +9,7 @@ import Layout from './Components/Layout/Layout';
 function App() {
   return (
     <>
-      <Route path="/">
-        <Layout name="home" />
-      </Route>
+      
       <Route path="/forms">
         <Layout name="forms" />
       </Route>
@@ -23,6 +21,9 @@ function App() {
       </Route>
       <Route path="/buttons">
         <Layout name="buttons" />
+      </Route>
+      <Route path="/home">
+        <Layout name="home" />
       </Route>
     </>
   );
