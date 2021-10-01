@@ -22,7 +22,7 @@ export default function TopNavbar() {
                
                 <p class="navbar-brand brand-logo">DDU</p>
                 
-                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" onClick={()=>handleMe()}>
                   <span class="mdi mdi-sort-variant"></span>
                 </button>
               </div>  
@@ -59,7 +59,7 @@ export default function TopNavbar() {
                   </div>
                 </li>
               </ul>
-              <button onClick={()=>handleMe()} class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button">
+              <button onClick={()=>handleMe()} class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
                 <span class="mdi mdi-menu"></span>
               </button>
             </div>
@@ -67,4 +67,3 @@ export default function TopNavbar() {
         </>
     )
 }
-// data-toggle="offcanvas"
