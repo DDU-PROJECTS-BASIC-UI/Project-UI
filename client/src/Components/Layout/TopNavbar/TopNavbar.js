@@ -1,7 +1,19 @@
 import React from 'react'
 
 export default function TopNavbar() {
-    
+    function handleMe()
+    {
+      console.log("Jenil")
+      // sidebar - icon - only;
+      if(document.body.className=="sidebar-icon-only")
+      {
+        document.body.className=""
+      }
+      else
+      {
+        document.body.className=document.body.className+"sidebar-icon-only"
+      }
+    }
     return (
         <>
         <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
@@ -47,7 +59,7 @@ export default function TopNavbar() {
                   </div>
                 </li>
               </ul>
-              <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <button onClick={()=>handleMe()} class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button">
                 <span class="mdi mdi-menu"></span>
               </button>
             </div>
@@ -55,3 +67,4 @@ export default function TopNavbar() {
         </>
     )
 }
+// data-toggle="offcanvas"

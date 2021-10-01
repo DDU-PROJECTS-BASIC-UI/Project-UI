@@ -5,6 +5,9 @@ import { Route } from 'react-router';
 // import TopNavbar from './Components/Layout/TopNavbar/TopNavbar';
 import './App.css';
 import Layout from './Components/Layout/Layout';
+import LoginComponent from './Components/LoginComponent/LoginComponent';
+import RegisterComponent from './Components/RegisterComponent/RegisterComponent';
+
 
 function App() {
   return (
@@ -24,6 +27,12 @@ function App() {
       </Route>
       <Route path="/home">
         <Layout name="home" />
+      </Route>
+      <Route path="/login">
+        <LoginComponent/>
+      </Route>
+      <Route path="/register">
+        <RegisterComponent/>
       </Route>
     </>
   );
