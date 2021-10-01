@@ -1,9 +1,9 @@
 import React from 'react'
-
+import { NavLink,Link } from 'react-router-dom'
 export default function TopNavbar() {
     function handleMe()
     {
-      console.log("Jenil")
+      // console.log("Jenil")
       // sidebar - icon - only;
       if(document.body.className=="sidebar-icon-only")
       {
@@ -59,6 +59,7 @@ export default function TopNavbar() {
                   </div>
                 </li>
               </ul>
+
               <button onClick={()=>handleMe()} class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
                 <span class="mdi mdi-menu"></span>
               </button>
